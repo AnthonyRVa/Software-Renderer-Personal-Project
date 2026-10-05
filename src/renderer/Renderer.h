@@ -14,6 +14,10 @@ public:
     [[nodiscard]] int height() const;
     [[nodiscard]] const std::uint32_t* pixels() const;
 
+    void DrawPixel(int x, int y, std::uint32_t color);
+
+    void DrawLine(int x0, int y0, int x1, int y1, uint8_t red, uint8_t green, uint8_t blue);
+
 private:
     int width_;
     int height_;
